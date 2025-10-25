@@ -1444,7 +1444,6 @@
             { id: 'unlock-pdf', title: 'Unlock PDF', desc: 'Remove password protection from a PDF.', icon: '🔓', fileType: '.pdf', multiple: false, process: () => showError('Unlock PDF tool is coming soon!') },
             { id: 'protect-pdf', title: 'Protect PDF', desc: 'Add a password to secure your PDF file.', icon: '🔒', fileType: '.pdf', multiple: false, process: () => showError('Protect PDF tool is coming soon!') },
             { id: 'page-numbers', title: 'Add Page Numbers', desc: 'Insert page numbers into your PDF.', icon: '#️⃣', fileType: '.pdf', multiple: false, process: () => showError('Add Page Numbers tool is coming soon!') },
-Example
             { id: 'reorder-pages', title: 'Reorder Pages', desc: 'Drag and drop to reorder PDF pages.', icon: '↕️', fileType: '.pdf', multiple: false, process: () => showError('Reorder Pages tool is coming soon!') },
             { id: 'delete-pages', title: 'Delete Pages', desc: 'Remove specific pages from a PDF.', icon: '🗑️', fileType: '.pdf', multiple: false, process: () => showError('Delete Pages tool is coming soon!') },
             { id: 'pdf-to-excel', title: 'PDF to Excel', desc: 'Extract tables from PDF to Excel.', icon: '📉', fileType: '.pdf', multiple: false, process: () => showError('PDF to Excel tool is coming soon!') },
@@ -1538,7 +1537,7 @@ Example
         }
 
         // Reset modal state
-        function resetModal() {
+        function reset.modal() {
             uploadedFiles = [];
             updateFileList();
             optionsContainer.innerHTML = '';
