@@ -8,19 +8,6 @@
     <meta name="description" content="Every tool you need to work with PDFs in one place. Merge, split, compress, convert, edit, and sign PDFs for free, directly in your browser.">
     <meta name="keywords" content="pdf tools, merge pdf, split pdf, compress pdf, pdf converter, edit pdf, sign pdf, word to pdf, pdf to word, free pdf tools">
 
-    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.17.1/dist/pdf-lib.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pptxgenjs/3.12.0/pptxgen.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    
-    <script>
-        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
-    </script>
-
     <style>
         /* --- 1. Design System & Globals --- */
         :root {
@@ -899,6 +886,21 @@
         </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.6.0/mammoth.browser.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pptxgenjs/3.12.0/pptxgen.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
 
@@ -1454,7 +1456,7 @@
                 { id: 'html-to-pdf', title: 'HTML to PDF', desc: 'Convert HTML code or a URL to PDF.', icon: '🌐', fileType: '.html', multiple: false, process: () => showError('HTML to PDF tool is coming soon!') },
                 { id: 'unlock-pdf', title: 'Unlock PDF', desc: 'Remove password protection from a PDF.', icon: '🔓', fileType: '.pdf', multiple: false, process: () => showError('Unlock PDF tool is coming soon!') },
                 { id: 'protect-pdf', title: 'Protect PDF', desc: 'Add a password to secure your PDF file.', icon: '🔒', fileType: '.pdf', multiple: false, process: () => showError('Protect PDF tool is coming soon!') },
-                { id: 'page-numbers', title: 'Add Page Numbers', desc: 'Insert page numbers into your PDF.', icon: '#️⃣', fileType: '.pdf', multiple: false, process: () => showError('Add Page Numbers tool is coming soon!') },
+                { id: 'page-numbers', title: 'Add Page Numbers', desc: 'Insert page numbers into your PDF.', icon: '#️⃣', fileType: '.pdf', multiple: false, process: ()D => showError('Add Page Numbers tool is coming soon!') },
                 { id: 'reorder-pages', title: 'Reorder Pages', desc: 'Drag and drop to reorder PDF pages.', icon: '↕️', fileType: '.pdf', multiple: false, process: () => showError('Reorder Pages tool is coming soon!') },
                 { id: 'delete-pages', title: 'Delete Pages', desc: 'Remove specific pages from a PDF.', icon: '🗑️', fileType: '.pdf', multiple: false, process: () => showError('Delete Pages tool is coming soon!') },
                 { id: 'pdf-to-excel', title: 'PDF to Excel', desc: 'Extract tables from PDF to Excel.', icon: '📉', fileType: '.pdf', multiple: false, process: () => showError('PDF to Excel tool is coming soon!') },
